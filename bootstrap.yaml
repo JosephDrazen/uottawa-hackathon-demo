@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/example/repo
+    repoURL: https://github.com/JosephDrazen/uottawa-hackathon-demo
     path: apps
     targetRevision: main
   destination:
