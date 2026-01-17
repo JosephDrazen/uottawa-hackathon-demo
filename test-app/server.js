@@ -8,25 +8,25 @@ async function startServer() {
 
   // Create a simple HTTP server
   const server = http.createServer((req, res) => {
-    const colors = ["🔴", "🟠", "🟡", "🟢", "🔵", "🟣"];
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    const emojis = ["🚀", "🌟", "🔥", "💫", "⚡", "🎉", "✨", "🌈"];
+    const emoji = emojis[Math.floor(Math.random() * emojis.length)];
+    const time = new Date().toLocaleTimeString();
     
     const art = `
-    ${randomColor} ╔═══════════════════════════════════════╗ ${randomColor}
-    ${randomColor} ║                                       ║ ${randomColor}
-    ${randomColor} ║   ██╗  ██╗███████╗██╗     ██╗      ██╗║ ${randomColor}
-    ${randomColor} ║   ██║  ██║██╔════╝██║     ██║     ██╔╝║ ${randomColor}
-    ${randomColor} ║   ███████║█████╗  ██║     ██║    ██╔╝ ║ ${randomColor}
-    ${randomColor} ║   ██╔══██║██╔══╝  ██║     ██║   ██╔╝  ║ ${randomColor}
-    ${randomColor} ║   ██║  ██║███████╗███████╗███████╔╝   ║ ${randomColor}
-    ${randomColor} ║   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝    ║ ${randomColor}
-    ${randomColor} ║                                       ║ ${randomColor}
-    ${randomColor} ║      🌍 W O R L D ! 🚀                ║ ${randomColor}
-    ${randomColor} ║                                       ║ ${randomColor}
-    ${randomColor} ║   Hit count: ${String(++hitCount).padStart(6, '0')}                  ║ ${randomColor}
-    ${randomColor} ║   Time: ${new Date().toISOString()}   ║ ${randomColor}
-    ${randomColor} ║                                       ║ ${randomColor}
-    ${randomColor} ╚═══════════════════════════════════════╝ ${randomColor}
+    ╭─────────────────────────────────────╮
+    │                                     │
+    │   ${emoji}  H E L L O   W O R L D  ${emoji}   │
+    │                                     │
+    │      ┌ ┐┌─┐┬  ┬  ┌─┐                │
+    │      ├─┤├┤ │  │  │ │                │
+    │      ┴ ┴└─┘┴─┘┴─┘└─┘                │
+    │                                     │
+    │   🎯 Visit #${String(++hitCount).padStart(5, '0')}                   │
+    │   ⏰ ${time.padEnd(20)}      │
+    │   📡 Running on port ${port}             │
+    │                                     │
+    ╰─────────────────────────────────────╯
+
     `;
     
     res.writeHead(200, { "Content-Type": "text/plain; charset=utf-8" });
