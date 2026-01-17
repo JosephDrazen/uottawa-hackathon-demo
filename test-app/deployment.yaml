@@ -30,8 +30,8 @@ spec:
         app: test-app
     spec:
       containers:
-      - image: ghcr.io/example/test-app:latest
-        name: test-app
-        ports:
-        - containerPort: 4000
-        resources: {}
+        - image: ghcr.io/JosephDrazen/test-app:latest
+          name: test-app
+          ports:
+            - containerPort: 4000
+          resources: {}

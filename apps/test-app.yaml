@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     path: test-app
-    repoURL: https://github.com/example/repo
+    repoURL: https://github.com/JosephDrazen/uottawa-hackathon-demo
     directory:
       include: "*.yaml"
   destination:
