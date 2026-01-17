@@ -12,22 +12,22 @@ async function startServer() {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     
     const art = `
-${randomColor} ╔═══════════════════════════════════════╗ ${randomColor}
-${randomColor} ║                                       ║ ${randomColor}
-${randomColor} ║   ██╗  ██╗███████╗██╗     ██╗      ██╗║ ${randomColor}
-${randomColor} ║   ██║  ██║██╔════╝██║     ██║     ██╔╝║ ${randomColor}
-${randomColor} ║   ███████║█████╗  ██║     ██║    ██╔╝ ║ ${randomColor}
-${randomColor} ║   ██╔══██║██╔══╝  ██║     ██║   ██╔╝  ║ ${randomColor}
-${randomColor} ║   ██║  ██║███████╗███████╗███████╔╝   ║ ${randomColor}
-${randomColor} ║   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝    ║ ${randomColor}
-${randomColor} ║                                       ║ ${randomColor}
-${randomColor} ║      🌍 W O R L D ! 🚀                ║ ${randomColor}
-${randomColor} ║                                       ║ ${randomColor}
-${randomColor} ║   Hit count: ${String(++hitCount).padStart(6, '0')}                  ║ ${randomColor}
-${randomColor} ║   Time: ${new Date().toISOString()}   ║ ${randomColor}
-${randomColor} ║                                       ║ ${randomColor}
-${randomColor} ╚═══════════════════════════════════════╝ ${randomColor}
-`;
+    ${randomColor} ╔═══════════════════════════════════════╗ ${randomColor}
+    ${randomColor} ║                                       ║ ${randomColor}
+    ${randomColor} ║   ██╗  ██╗███████╗██╗     ██╗      ██╗║ ${randomColor}
+    ${randomColor} ║   ██║  ██║██╔════╝██║     ██║     ██╔╝║ ${randomColor}
+    ${randomColor} ║   ███████║█████╗  ██║     ██║    ██╔╝ ║ ${randomColor}
+    ${randomColor} ║   ██╔══██║██╔══╝  ██║     ██║   ██╔╝  ║ ${randomColor}
+    ${randomColor} ║   ██║  ██║███████╗███████╗███████╔╝   ║ ${randomColor}
+    ${randomColor} ║   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝    ║ ${randomColor}
+    ${randomColor} ║                                       ║ ${randomColor}
+    ${randomColor} ║      🌍 W O R L D ! 🚀                ║ ${randomColor}
+    ${randomColor} ║                                       ║ ${randomColor}
+    ${randomColor} ║   Hit count: ${String(++hitCount).padStart(6, '0')}                  ║ ${randomColor}
+    ${randomColor} ║   Time: ${new Date().toISOString()}   ║ ${randomColor}
+    ${randomColor} ║                                       ║ ${randomColor}
+    ${randomColor} ╚═══════════════════════════════════════╝ ${randomColor}
+    `;
     
     res.writeHead(200, { "Content-Type": "text/plain; charset=utf-8" });
     res.end(art);
