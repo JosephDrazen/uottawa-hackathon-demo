@@ -1,5 +1,7 @@
 import http from "http";
 
+let hitCount = 0;
+
 async function startServer() {
   const port = process.env.PORT || 4000;
   const host = "0.0.0.0";
@@ -29,7 +31,6 @@ ${randomColor} ╚════════════════════�
     
     res.writeHead(200, { "Content-Type": "text/plain; charset=utf-8" });
     res.end(art);
-  });
   });
 
   // Start listening

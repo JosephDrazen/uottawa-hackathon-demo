@@ -30,7 +30,7 @@ spec:
         app: test-app
     spec:
       containers:
-        - image: ghcr.io/JosephDrazen/test-app:latest
+        - image: ghcr.io/josephdrazen/test-app:latest
           name: test-app
           ports:
             - containerPort: 4000
